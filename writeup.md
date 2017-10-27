@@ -137,5 +137,5 @@ Here's a [link to my video result](./output_images/project_video_output.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-There are instances in the video outptu where the lane detection jumps around for a few frames as a result a white streak in the middle of the road that isn't a lane line.
-One way to address would be to track the previous lines and try to ensure the lines more or less remain parallel and that the mean distance between the lines does not suddenly change by a large amount.
+There are instances in the video output where the lane detection jumps around for a few frames as a result a white streak in the middle of the road that isn't a lane line.
+One way to address would be to track the previous lines and try to ensure the lines more or less remain parallel and that the mean distance between the lines does not suddenly change by a large margin.
