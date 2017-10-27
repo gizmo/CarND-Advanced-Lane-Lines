@@ -85,6 +85,7 @@ perspective_dst = np.float32(
      [1099., 0.],
      [290.,  720.],
      [1099., 720.]])
+```
 
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.  I tested this on a straight lane image and curved lane image.
@@ -121,7 +122,7 @@ I implemented this step in cell 17 lines 1 through 29.  Here is an example of my
 
 ![alt text][image13]
 
-As part of the pipeline cell 18 perform the above steps in the function process_image() which takes as input an image file that is fed in by VideoFileClip.fl function.
+As part of the pipeline cell 18 perform the above steps in the function process_image() which takes as input an image file that is fed in by VideoFileClip.fl_image() function.
 
 ---
 
@@ -136,8 +137,6 @@ Here's a [link to my video result](./output_images/project_video_output.mp4)
 ### Discussion
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
-
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
 
 There are instances in the video outptu where the lane detection jumps around for a few frames as a result a white streak in the middle of the road that isn't a lane line.
 One way to address would be to track the previous lines and try to ensure the lines more or less remain parallel and that the mean distance between the lines does not suddenly change by a large amount.
