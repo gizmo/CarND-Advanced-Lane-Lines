@@ -87,7 +87,6 @@ perspective_dst = np.float32(
      [1099., 720.]])
 ```
 
-
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.  I tested this on a straight lane image and curved lane image.
 
 ![alt text][image4]
