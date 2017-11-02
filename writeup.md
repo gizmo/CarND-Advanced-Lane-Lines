@@ -28,7 +28,7 @@ The goals / steps of this project are the following:
 [image9]: ./output_images/poly_segmented.png "Poly Segmented"
 [image10]: ./output_images/poly_window.png "Poly Window"
 [image11]: ./output_images/poly_fit.png "Poly Fit Visual"
-[image12]: ./output_images/color_fit_lines.png "Color Fit Lines"
+[image12]: ./output_images/color_fit_lines.jpg "Color Fit Lines"
 [image13]: ./output_images/example_output.png "Output"
 [image14]: ./output_images/colorspace_hls.png "Colorspace HLS"
 [image15]: ./output_images/colorspace_lab.png "Colorspace LAB"
@@ -116,7 +116,7 @@ Using this histogram I locate the two highest peaks of this histogram representi
 
 ![alt text][image9]
 
-I fit my lane lines with a 2nd order polynomial kinda like this:
+I fit my lane lines with a 2nd order polynomial as follows:
 
 ![alt text][image12]
 ![alt text][image11]
